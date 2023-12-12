@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin</title>
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <!-- favicon -->
+  <link rel="icon" type="image/x-icon" href="assets/images/icon.jpg" />
+  <!-- fontawsom cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+  <!-- custom css -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xl-3">
+        <div class="sidebar">
+          <div class="mt-5">
+            <div class="card border-0">
+              <a href="index.html">
+                <img src="assets/images/Curamatic Logo Transparent 1.png" class="" alt="..."
+                  style="width: 135px; height: 28px; margin-left: 1rem" />
+              </a>
+
+              <div class="card-body">
+                <h5 class="card-title text-muted mb-0" style="font-weight: 400; font-size: 14px; line-height: 22px">
+                  Welcome Ann
+                </h5>
+                <p class="card-text" style="
+                      font-weight: 300;
+                      font-style: italic;
+                      font-size: 11px;
+                      line-height: 22px;
+                    ">
+                  Wed, March 25 10:34am
+                </p>
+                <hr />
+              </div>
+            </div>
+          </div>
+          <div>
+            <ul class="nav flex-column">
+              <!-- <li class="nav-item">
+               
+                <a class="nav-link active" aria-current="page" href="#">Summary</a>
+              </li> -->
+              <li class="mb-2" onclick="window.location.href='index.html'">
+                <div class="side-icon position-relative">
+                  <!-- <i class="fa-solid fa-book side-1"></i> -->
+                  <img src="assets/images/sidebar-1.png" class="side-1" alt="" />
+                  <a href="index.html" class="side-a">Summary</a>
+                </div>
+              </li>
+              <li class="mb-2" onclick="window.location.href='Quality-Measures.html'">
+                <div class="side-icon position-relative">
+                  <!-- <i class="fa-solid fa-chart-line  side-1"></i> -->
+                  <img src="assets/images/sidebar-2.png" class="side-1" alt="" />
+                  <a href="Quality-Measures.html" class="side-a">Quality Measures</a>
+                </div>
+              </li>
+              <li class="mb-2" onclick="window.location.href='Care-Gaps-Risk-Conditions-List.html'">
+                <div class="side-icon position-relative">
+                  <!-- <i class="fa-solid fa-chart-pie side-1"></i> -->
+                  <img src="assets/images/sidebar-3.png" class="side-1" alt="" />
+                  <a href="Care-Gaps-Risk-Conditions-List.html" class="side-a">Care Gaps & Risk Conditions List</a>
+                </div>
+              </li>
+              <li class="mb-2" onclick="window.location.href='Total-Costs.html'">
+                <div class="side-icon position-relative">
+                  <!-- <i class="fa-solid fa-dollar-sign side-1"></i> -->
+                  <!-- <i class="fa-solid fa-chart-line  side-1"></i> -->
+                  <img src="assets/images/sidebar-4.png" class="side-1" alt="" />
+                  <a href="Total-Costs.html" class="side-a">Total Costs</a>
+                </div>
+              </li>
+              <li class="mb-2" onclick="window.location.href='High-Risk-Patient-List.html'">
+                <div class="side-icon  position-relative">
+                  <!-- <i class="fa-solid fa-id-card-clip side-1"></i> -->
+                  <img src="assets/images/sidebar-5.png" class="side-1" alt="" />
+                  <a href="High-Risk-Patient-List.html" class="side-a">High Risk Patient List</a>
+                </div>
+              </li>
+              <li class="mb-2" onclick="window.location.href='Provider.html'">
+                <div class="side-icon  position-relative">
+                  <!-- <i class="fa-solid fa-id-card-clip side-1"></i> -->
+                  <img src="assets/images/provider.png" class="side-1" alt="" />
+                  <a href="Provider.html" class="side-a">Providers</a>
+                </div>
+              </li>
+              <li class="mb-2" onclick="window.location.href='Admin.html'">
+                <div class="side-icon active  position-relative">
+                  <!-- <i class="fa-solid fa-id-card-clip side-1"></i> -->
+                  <img src="assets/images/admin.png" class="side-1" alt="" />
+                  <a href="Admin.html" class="side-a">Admin</a>
+                </div>
+              </li>
+              <li class="mb-2" onclick="window.location.href='profile.html'">
+                <div class="side-icon  position-relative">
+                  <!-- <i class="fa-solid fa-id-card-clip side-1"></i> -->
+                  <img src="assets/images/profile.png" class="side-1" alt="" />
+                  <a href="Profile.html" class="side-a">Profile</a>
+                </div>
+              </li>
+              <li class="mb-2" onclick="window.location.href='Help.html'">
+                <div class="side-icon  position-relative">
+                  <!-- <i class="fa-solid fa-id-card-clip side-1"></i> -->
+                  <img src="assets/images/help.png" class="side-1" alt="" />
+                  <a href="Help.html" class="side-a">Help</a>
+                </div>
+              </li>
+              <li class="mb-2" onclick="window.location.href='login.html'">
+                <div class="side-icon position-relative">
+                  <!-- <i class="fa-solid fa-right-from-bracket side-1"></i> -->
+                  <img src="assets/images/sidebar-6.png" class="side-1" alt="" />
+                  <a href="login.html" class="side-a">Logout</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-9 pe-0">
+        <div class="content-wrap">
+          <div class="container">
+            <div class="row mt-5">
+              <div class="col-xl-12 d-flex justify-content-between align-items-center">
+                <div class="ms-5">
+                  <p class="heading-top">Admin</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="row mt-3 mx-4">
+              <div class="col-xl-12">
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                  <li class="nav-item me-2" role="presentation">
+                    <button class="nav-link  text-dark" id="pills-home-tab" data-bs-toggle="pill"
+                      data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                      aria-selected="true">
+                      Manage Users
+                    </button>
+                  </li>
+                
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                  <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                    aria-labelledby="pills-home-tab" tabindex="0">
+                    <div class="row">
+                      <div class="col-xl-12">
+                        <!-- Search section -->
+                        <div class="div-xl-12 d-flex align-items-center justify-content-between drk py-3 mb-4 px-4">
+                            <!-- prient share button-->
+                            <div class="input-group w-75">
+                              <textarea class="form-control p-2 "  style="height: 42px;"  placeholder="Search items" ></textarea>
+                        </div>    
+                                    <button type="button" class="btn btn-outline-primary text-dark ms-3" style="
+                                  height: 32px;
+                                  width: 108.88px;
+                                  font-size: 14px;
+                                ">
+                              <i class="fa-solid fa fa-search  "></i>
+                              Search
+                            </button>
+                           
+                          </div>
+                        </div>
+                         <!-- Search section end -->
+                        <!-- data table start -->
+                        <table id="example" class="table">
+                          <thead>
+                            <tr style="background-color: #e6f4ff">
+                              <th class="ytd-tbl text-start text-nowrap align-middle ytd-tbl-tr-3">
+                               Name
+                              </th>
+                              <th class="ytd-tbl text-start align-middle text-nowrap ytd-tbl-tr-3">
+                             Email
+                              </th>
+                              <th class="align-middle text-nowrap ytd-tbl-tr-3">
+                              Role
+                              </th>
+                              <th class="align-middle text-nowrap ytd-tbl-tr-3">Admin</th>
+                              <th class="ytd-tbl text-center ytd-tbl-tr-3"></th>
+                              <th class="ytd-tbl text-center text-nowrap align-middle ytd-tbl-tr-3"></th>
+                              <th class="ytd-tbl text-center ytd-tbl-tr-3"></th>
+                              <th class="ytd-tbl text-center ytd-tbl-tr-3"></th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class="ytd-tbl-tr py-3">Craig Jones </td>
+                              <td class="ytd-tbl-tr py-3">bsmith@firstcareaco.com</td>
+                              <td class="ytd-tbl-tr py-3">
+                               Non-PHI
+                              </td>
+                              <td class="ytd-tbl-tr py-3">yes</td>
+                              <td class="ytd-tbl-tr py-3"> <div class="dropdown">
+                                <a class="border-0 text-dark tblu" href="adminUser.html" style="text-decoration: none;font-size: 13px;" type="button"
+                                  style="width: 170px">
+                                  Edit
+                                </a></div></td>
+                              <td class="ytd-tbl-tr py-3"> <div class="dropdown">
+                                <a class="border-0 text-dark tblu" style="text-decoration: none;font-size: 13px;" type="button"
+                                  data-bs-toggle="dropdown" aria-expanded="false" style="width: 170px">
+                            Suspend
+                                </a></div></td>
+                              <td class="ytd-tbl-tr py-3"> <div class="dropdown">
+                                <a class="border-0 text-dark tblu" style="text-decoration: none;font-size: 13px;" type="button"
+                                  data-bs-toggle="dropdown" aria-expanded="false" style="width: 170px">
+                                Delete
+                                </a></div></td>
+                              <td class="ytd-tbl-tr py-3"></td>
+                            </tr>
+                            <tr style="background-color: #F2F2F2">
+                              <td class="ytd-tbl-tr py-3">Claire Baxter</td>
+                              <td class="ytd-tbl-tr py-3">cbaxter@firstcareaco.com</td>
+                              <td class="ytd-tbl-tr py-3">
+                                PHI
+                              </td>
+                              <td class="ytd-tbl-tr py-3">No</td>
+                              
+                              <td class="ytd-tbl-tr py-3"> <div class="dropdown">
+                                <a class="border-0 text-dark tblu"  href="adminUser.html" style="text-decoration: none; font-size: 13px;" type="button"
+                                  style="width: 170px">
+                                  Edit
+                                </a></div></td>
+                                <td class="ytd-tbl-tr py-3">
+                                    <div class="dropdown">
+                                        <a class="border-0 text-dark tblu" style="text-decoration: none ; font-size: 13px;" type="button"
+                                          data-bs-toggle="dropdown" aria-expanded="false" style="width: 170px">
+                                          Suspend
+                                        </a></div>
+                                </td>
+                              <td class="ytd-tbl-tr py-3"> <div class="dropdown">
+                                <a class="border-0 text-dark tblu" style="text-decoration: none ; font-size: 13px;" type="button"
+                                  data-bs-toggle="dropdown" aria-expanded="false" style="width: 170px">
+                                 Delete
+                                </a></div></td>
+                              <td class="ytd-tbl-tr py-3"></td>
+                            </tr>
+                            <tr>
+                              <td class="ytd-tbl-tr py-3">Shelly Fraser</td>
+                              <td class="ytd-tbl-tr py-3">
+                                sfraser@firstcareaco.com
+                              </td>
+                              <td class="ytd-tbl-tr py-3">
+                          PHI
+                              </td>
+                              <td class="ytd-tbl-tr py-3">No</td>
+                              <td class="ytd-tbl-tr py-3"> <div class="dropdown">
+                                <a class="border-0 text-dark tblu" href="adminUser.html" style="text-decoration: none; font-size: 13px;" type="button"
+                                  style="width: 170px">
+                                  Edit
+                                </a></div></td>
+                              <td class="ytd-tbl-tr py-3"> <div class="dropdown">
+                                <a class="border-0 text-dark tblu" style="text-decoration: none ; font-size: 13px;" type="button"
+                                  data-bs-toggle="dropdown" aria-expanded="false" style="width: 170px">
+                            Suspend
+                                </a></div></td>
+                              <td class="ytd-tbl-tr py-3"> <div class="dropdown">
+                                <a class="border-0 text-dark tblu" style="text-decoration: none ; font-size: 13px;" type="button"
+                                  data-bs-toggle="dropdown" aria-expanded="false" style="width: 170px">
+                                Delete
+                                </a></div></td>
+                              <td class="ytd-tbl-tr py-3"></td>
+                            </tr>
+                            <tr style="background-color: #F2F2F2">
+                                <td class="ytd-tbl-tr py-3">
+                                  Michael Smith
+                                </td>
+                                <td class="ytd-tbl-tr py-3"> msmith@firstcareaco.com</td>
+                                <td class="ytd-tbl-tr py-3">
+                                  Non-PHI
+                                </td>
+                                <td class="ytd-tbl-tr py-3">no</td>
+                                <td class="ytd-tbl-tr py-3"> <div class="dropdown">
+                                    <a class="border-0 text-dark tblu" href="adminUser.html" style="text-decoration: none ; font-size: 13px;" type="button"
+                                     style="width: 170px">
+                                      Edit
+                                    </a></div></td>
+                                  <td class="ytd-tbl-tr py-3"> <div class="dropdown">
+                                    <a class="border-0 text-dark tblu" style="text-decoration: none ; font-size: 13px;" type="button"
+                                      data-bs-toggle="dropdown" aria-expanded="false" style="width: 170px">
+                                Suspend
+                                    </a></div></td>
+                                  <td class="ytd-tbl-tr py-3"> <div class="dropdown">
+                                    <a class="border-0 text-dark tblu" style="text-decoration: none ; font-size: 13px;" type="button"
+                                      data-bs-toggle="dropdown" aria-expanded="false" style="width: 170px">
+                                    Delete
+                                    </a></div></td>
+                                <td class="ytd-tbl-tr py-4"></td>
+                              </tr>
+                            <tr >
+                              <td class="ytd-tbl-tr py-3">
+                                Hailey Barnes
+                              </td>
+                              <td class="ytd-tbl-tr py-3">hbarnes@firstcareaco.com</td>
+                              <td class="ytd-tbl-tr py-3">
+                                PHI
+                              </td>
+                              <td class="ytd-tbl-tr py-3">no</td>
+                              <td class="ytd-tbl-tr py-3"> <div class="dropdown">
+                                <a class="border-0 text-dark tblu" href="adminUser.html" style="text-decoration: none ; font-size: 13px;" type="button"
+                                   style="width: 170px">
+                                  Edit
+                                </a></div></td>
+                              <td class="ytd-tbl-tr py-3"> <div class="dropdown">
+                                <a class="border-0 text-dark tblu" style="text-decoration: none ; font-size: 13px;" type="button"
+                                  data-bs-toggle="dropdown" aria-expanded="false" style="width: 170px">
+                            Suspend
+                                </a></div></td>
+                              <td class="ytd-tbl-tr py-3"> <div class="dropdown">
+                                <a class="border-0 text-dark tblu" style="text-decoration: none ; font-size: 13px;" type="button"
+                                  data-bs-toggle="dropdown" aria-expanded="false" style="width: 170px">
+                                Delete
+                                </a></div></td>
+                              <td class="ytd-tbl-tr py-4"></td>
+                            </tr>
+                            <tr style="background-color: #F2F2F2">
+                                <td class="ytd-tbl-tr py-3">
+                                    Eric Mason
+                                </td>
+                                <td class="ytd-tbl-tr py-3">emason@firstcareaco.com</td>
+                                <td class="ytd-tbl-tr py-3">
+                                  PHI
+                                </td>
+                                <td class="ytd-tbl-tr py-3">no</td>
+                                <td class="ytd-tbl-tr py-3"> <div class="dropdown">
+                                    <a class="border-0 text-dark tblu" href="adminUser.html" style="text-decoration: none ; font-size: 13px;" type="button"
+                                      style="width: 170px">
+                                      Edit
+                                    </a></div></td>
+                                  <td class="ytd-tbl-tr py-3"> <div class="dropdown">
+                                    <a class="border-0 text-dark tblu" style="text-decoration: none ; font-size: 13px;" type="button"
+                                      data-bs-toggle="dropdown" aria-expanded="false" style="width: 170px">
+                                Suspend
+                                    </a></div></td>
+                                  <td class="ytd-tbl-tr py-3"> <div class="dropdown">
+                                    <a class="border-0 text-dark tblu" style="text-decoration: none ; font-size: 13px;" type="button"
+                                      data-bs-toggle="dropdown" aria-expanded="false" style="width: 170px">
+                                    Delete
+                                    </a></div></td>
+                                <td class="ytd-tbl-tr py-4"></td>
+                            </tr>
+                              
+                              <tr >
+                                <td class="ytd-tbl-tr py-3">
+                                 Tara Johns
+                                </td>
+                                <td class="ytd-tbl-tr py-3">tjohns@firstcareaco.com</td>
+                                <td class="ytd-tbl-tr py-3">
+                                  Non-PHI
+                                </td>
+                                <td class="ytd-tbl-tr py-3">no</td>
+                                <td class="ytd-tbl-tr py-3"> <div class="dropdown">
+                                    <a class="border-0 text-dark tblu" href="adminUser.html" style="text-decoration: none ; font-size: 13px;" type="button"
+                                     style="width: 170px">
+                                      Edit
+                                    </a></div></td>
+                                  <td class="ytd-tbl-tr py-3"> <div class="dropdown">
+                                    <a class="border-0 text-dark tblu" style="text-decoration: none ; font-size: 13px;" type="button"
+                                      data-bs-toggle="dropdown" aria-expanded="false" style="width: 170px">
+                                Suspend
+                                    </a></div></td>
+                                  <td class="ytd-tbl-tr py-3"> <div class="dropdown">
+                                    <a class="border-0 text-dark tblu" style="text-decoration: none ; font-size: 13px;" type="button"
+                                      data-bs-toggle="dropdown" aria-expanded="false" style="width: 170px">
+                                    Delete
+                                    </a></div></td>
+                                <td class="ytd-tbl-tr py-4"></td>
+                              </tr>
+                             
+                          </tbody>
+                        </table>
+                        <!-- data table end -->
+                          <!-- pagination -->
+                          <nav aria-label="Page navigation example ">
+                            <ul class="pagination">
+                              <li class="page-item border-0">
+                                <a class="page-link border-0" href="#" aria-label="Previous">
+                                  <!-- <span aria-hidden="true">&laquo;</span> -->
+                                  <img src="assets/images/p-arrow.png" alt="" />
+                                </a>
+                              </li>
+                              <li class="page-item">
+                                <a class="page-link border-0" href="#">1</a>
+                              </li>
+                              <li class="page-item">
+                                <a class="page-link border-0" href="#">2</a>
+                              </li>
+                              <li class="page-item">
+                                <a class="page-link border-0" href="#" aria-label="Next">
+                                  <!-- <span aria-hidden="true">&raquo;</span> -->
+                                  <img src="assets/images/p-arrow-2.png" alt="" />
+                                </a>
+                              </li>
+                            </ul>
+                          </nav>
+                          <!-- pagination -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- java script links start -->
+  <script src="assets/js/bootstrap.min.js"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <script src="assets/js/index.js"></script>
+  <!-- java script link end -->
+</body>
+
+</html>
